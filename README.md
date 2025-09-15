@@ -40,14 +40,9 @@ The API accepts JSON input and returns either a downloadable PDF or a Base64 str
 ```
 
 
-## 📊 Sample Visuals
+## Sample Visuals
 
-- 📈 Accidents by Hour of Day  
-- ☁️ Weather Conditions vs. Severity  
-- 🌍 Heatmap of Accident Locations (Folium)  
-- 📅 Monthly Trend of Accidents  
 
-<img width="1231" height="855" alt="Confusion_Matrix" src="https://github.com/user-attachments/assets/6436ba40-6dbc-4087-a080-fb62abd68a85" />
 
 
 ---
