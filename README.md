@@ -41,10 +41,74 @@ The API accepts JSON input and returns either a downloadable PDF or a Base64 str
 
 
 ## Sample Visuals
+1. Certificate:
+   <img width="884" height="937" alt="image" src="https://github.com/user-attachments/assets/26badfc1-ff8e-459a-962a-b00254451f76" />
+
+2. Invoice:
+    <img width="1049" height="646" alt="image" src="https://github.com/user-attachments/assets/a88c7000-5749-4de8-9b51-8873a5736fdd" />
+
+
+3. Report Card:
+   <img width="1055" height="822" alt="image" src="https://github.com/user-attachments/assets/5b0c2f90-df40-413b-a2a3-7fd595effd40" />
 
 
 
+---
 
+## Sample Input
+1. Certificate
+   ```bash
+       {
+      "type": "certificate",
+      "output":"file",
+      "data": {
+        "name": "Sample name",
+        "course": "Full Stack Web Development",
+        "date": "2025-09-15",
+        "issuer": "XYZ Institute"
+      }
+    }
+
+2. Invoice
+   ```bash
+     {
+    "type": "invoice",
+    "output": "file",
+    "data": {
+      "company": "Tech Corp",
+      "customer": {"name": "Alice"},
+      "items": [{"name": "Laptop", "qty": 1, "price": 120000},
+      {"name": "Phone", "qty": 2, "price": 12000}],
+      "total": 140000
+    }
+    }
+
+   
+3. Report Card
+   ```bash
+    {
+      "type": "report_card",
+      "output":"file",
+      "data": {
+        "student": {
+          "name": "Sample name",
+          "roll": "56",
+          "class": "6th sem"
+        },
+        "subjects": [
+          { "name": "Data Structures", "marks": 85 },
+          { "name": "Operating Systems", "marks": 78 },
+          { "name": "DBMS", "marks": 92 },
+          { "name": "Computer Networks", "marks": 88 }
+        ],
+        "total": 343,
+        "grade": "A",
+        "remarks": "Excellent performance! Keep up the good work."
+      }
+    }
+
+---
+NOTE:- If you want the result in base 64 format just remove the "output:file" from the input.
 ---
 
 ## 🚀 How to Run
