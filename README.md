@@ -35,8 +35,7 @@ The API accepts JSON input and returns either a downloadable PDF or a Base64 str
   │   ├── report_card.html
   │   └── certificate.html
   ├── requirements.txt        # Python dependencies
-  ├── README.md               # Project documentation
-  └── screenshots/            # Example output PDFs as images
+  ├── README.md               
 ```
 
 
